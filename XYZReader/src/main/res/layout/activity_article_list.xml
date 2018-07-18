@@ -12,10 +12,18 @@
             android:layout_height="@dimen/toolbar_start_height">
 
             <android.support.design.widget.CollapsingToolbarLayout
-                style="@style/AppTheme"
+                style="@style/AppTheme.ToolbarTheme"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+                <android.support.v7.widget.Toolbar
+                    android:id="@+id/toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    android:minHeight="?attr/actionBarSize"
+                    app:layout_collapseMode="pin"
+                    android:layout_gravity="bottom"/>
 
                 <ImageView
                     android:layout_width="match_parent"
@@ -24,14 +32,6 @@
                     android:paddingLeft="16dp"
                     android:paddingRight="16dp"
                     android:contentDescription="@string/app_name"/>
-
-                <android.support.v7.widget.Toolbar
-                    android:id="@+id/toolbar"
-                    android:layout_width="match_parent"
-                    android:layout_height="?attr/actionBarSize"
-                    android:minHeight="?attr/actionBarSize"
-                    app:layout_collapseMode="pin" />
-
 
             </android.support.design.widget.CollapsingToolbarLayout>
 
@@ -42,7 +42,8 @@
             android:id="@+id/swipe_refresh_layout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            android:background="@color/theme_primary_100">
 
             <android.support.v7.widget.RecyclerView
                 android:id="@+id/recycler_view"
