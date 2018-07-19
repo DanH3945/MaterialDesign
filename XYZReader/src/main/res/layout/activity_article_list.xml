@@ -11,18 +11,18 @@
         <android.support.design.widget.AppBarLayout
             android:layout_width="match_parent"
             android:layout_height="@dimen/toolbar_start_height"
-            android:stateListAnimator="@animator/appbar_elevation">
+            android:stateListAnimator="@animator/appbar_elevation"
+            style="@style/AppTheme.ToolbarTheme">
 
             <android.support.design.widget.CollapsingToolbarLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                app:layout_scrollFlags="scroll|exitUntilCollapsed"
-                style="@style/AppTheme.ToolbarTheme">
+                android:layout_height="wrap_content"
+                app:layout_scrollFlags="scroll|exitUntilCollapsed">
 
                 <View style="@style/Divider"
                     android:layout_gravity="bottom"
                     android:layout_marginBottom="?actionBarSize"
-                    app:layout_collapseMode="pin"/>
+                    />
 
                 <android.support.v7.widget.Toolbar
                     android:id="@+id/toolbar"
@@ -34,13 +34,13 @@
 
                 <ImageView
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_height="88dp"
                     android:src="@drawable/logo"
                     android:paddingLeft="16dp"
                     android:paddingRight="16dp"
                     android:contentDescription="@string/app_name"
-                    android:layout_marginBottom="56dp"
                     android:layout_gravity="top"
+                    android:layout_marginBottom="56dp"
                     app:layout_collapseMode="pin" />
 
             </android.support.design.widget.CollapsingToolbarLayout>
@@ -53,7 +53,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:layout_behavior="@string/appbar_scrolling_view_behavior"
-            android:background="@color/theme_primary_100">
+            android:background="@color/white">
 
             <android.support.v7.widget.RecyclerView
                 android:id="@+id/recycler_view"

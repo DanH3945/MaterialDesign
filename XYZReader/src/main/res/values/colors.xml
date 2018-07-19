@@ -18,12 +18,18 @@
 <resources>
     <color name="photo_placeholder">#ccc</color>
 
-    <color name="theme_primary_600">#049ab1</color>
-    <color name="theme_primary_900">#045156</color>
-    <color name="theme_primary_100">#afe5ee</color>
-    <color name="theme_accent">#e4987d</color>
+    <color name="colorPrimary">#049ab1</color>
+    <color name="colorPrimaryDark">#045156</color>
+    <color name="colorPrimaryLight">#afe5ee</color>
+    <color name="colorAccent">#e4987d</color>
     <color name="ltgray">#ffe0e0e0</color>
     <color name="text_color">#1e1b1b</color>
-    <color name="text_color_light">#5000</color>
+    <color name="text_body_color">#1e1b1b</color>
+    <color name="text_header_color">#1e1b1b</color>
+    <color name="text_subheader_color">#706c6c</color>
+
+
+
     <color name="divider_color">#000</color>
+    <color name="white">#ffffff</color>
 </resources>
