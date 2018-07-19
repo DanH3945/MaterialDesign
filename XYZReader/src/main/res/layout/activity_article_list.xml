@@ -20,17 +20,15 @@
                 app:layout_scrollFlags="scroll|exitUntilCollapsed">
 
                 <View style="@style/Divider"
-                    android:layout_gravity="bottom"
-                    android:layout_marginBottom="?actionBarSize"
-                    />
+                    android:layout_gravity="top" />
 
-                <android.support.v7.widget.Toolbar
-                    android:id="@+id/toolbar"
-                    android:layout_width="match_parent"
-                    android:layout_height="?attr/actionBarSize"
-                    android:minHeight="?attr/actionBarSize"
-                    app:layout_collapseMode="pin"
-                    android:layout_gravity="bottom"/>
+                <!--<android.support.v7.widget.Toolbar-->
+                    <!--android:id="@+id/toolbar"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="?attr/actionBarSize"-->
+                    <!--android:minHeight="?attr/actionBarSize"-->
+                    <!--app:layout_collapseMode="pin"-->
+                    <!--android:layout_gravity="bottom"/>-->
 
                 <ImageView
                     android:layout_width="match_parent"
@@ -39,8 +37,6 @@
                     android:paddingLeft="16dp"
                     android:paddingRight="16dp"
                     android:contentDescription="@string/app_name"
-                    android:layout_gravity="top"
-                    android:layout_marginBottom="56dp"
                     app:layout_collapseMode="pin" />
 
             </android.support.design.widget.CollapsingToolbarLayout>
