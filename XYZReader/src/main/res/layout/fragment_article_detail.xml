@@ -88,13 +88,14 @@
 
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/share_fab"
+        android:backgroundTint="@color/colorAccent"
         android:layout_width="56dp"
         android:layout_height="56dp"
         android:layout_gravity="bottom|end"
         android:layout_marginBottom="@dimen/fab_margin"
         android:layout_marginRight="@dimen/fab_margin"
         android:contentDescription="@string/action_share"
-        android:elevation="@dimen/fab_elevation"
+        app:elevation="@dimen/fab_elevation"
         android:src="@drawable/ic_share"
         app:borderWidth="0dp"
         app:pressedTranslationZ="@dimen/fab_press_translation_z" />
