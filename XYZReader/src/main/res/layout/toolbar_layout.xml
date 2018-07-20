@@ -6,6 +6,7 @@
         style="@style/AppTheme.ToolbarTheme"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:elevation="4dp"
         android:stateListAnimator="@animator/appbar_elevation">
 
         <android.support.v7.widget.Toolbar
